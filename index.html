@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Трасса</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/jquery.fancybox.min.css" type="text/css" rel="stylesheet" />
+<link href="css/slick-theme.css" type="text/css" rel="stylesheet" />
+<link href="css/slick.css" type="text/css" rel="stylesheet" />
+<link href="css/style-reset.css" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="css/styles.css" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="css/responsive.css" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="apple-touch-icon" href="/favicon.png" sizes="76x76">
+<link rel="apple-touch-icon" href="/favicon.png" sizes="120x120">
+<link rel="apple-touch-icon" href="/favicon.png" sizes="152x152">
+<link rel="apple-touch-icon" href="/favicon.png" sizes="180x180">
+<link type="image/png" rel="icon" href="/favicon.png" />
+<link type="image/png" rel="shortcut icon" href="/favicon.png" />
+</head>
+<body>
+
+    <div class="main" id="main">
+		<div class="header">
+        <div class="header-content">
+			<div class="logo"><img src="img/logo.png"></div>
+			<div class="contact-top">
+			<div id="social">
+				<ul>
+					<li class="social-wk"><a href="#" target="_blank"></a></li>
+					<li class="social-ok"><a href="#" target="_blank"></a></li>
+				</ul>
+			</div>
+			<div id="main-nav">
+				<ul class="menu-list">
+					<li><a href="#about" class="splink">О нас</li>
+					<li><a href="#restaurants" class="splink">Адреса</a></li>
+					<li><a href="#menu" class="splink">Меню</a> </li>
+					<li><a href="#galleryls" class="splink">Галерея</a> </li>
+					<li><a href="#addresses" class="splink">Как нас найти</a> </li>
+				</ul>
+			</div>
+			<div class="call-back"><a href="#" class="call-back__link">Заказать звонок</a></div>
+
+			<!-- Форма обратного звонка -->
+			<div class="call-back-form-container">
+                            <div class="call-back-form" id="trassa-form">
+				<a class="call-back_close close" href="#"></a>
+                                <form method="post" class=""></form>
+                                <div class="form-row">
+                                    <input type="text" name="name" placeholder="имя">
+                                </div>
+                                <div class="form-row">
+                                    <input type="text" name="contacts" placeholder="телефон">
+                                </div>
+                                <div class="form-button">
+                                    <button class="send call-back__send" type="button">
+                                            <a href="javascript:;">ОТПРАВИТЬ</a>
+                                    </button>
+                                    <div style="display: none" class="form-button-desc-error error-message-for-name">Введите имя</div>
+                                    <div style="display: none" class="form-button-desc-error error-message-for-phone">Введите телефон</div>
+                                </div>
+                            </div>
+					</div>
+			
+
+			</div>
+		</div>
+		</div>
+		
+		<div class="slider-top">
+			<div class="slider-top-content" style="background-image: url(img/slide-1.jpg);">
+				<div class="banner-wrapper">
+					<div class="banner-content">
+						<div class="banner-viewport">
+							<ul class="banner">
+								<li>
+									<div class="flex-caption-text">
+										<h2>Ждем вас в гости!</h2>
+										<span class="flex-caption-text-divider">&nbsp;</span>
+										<p>Наша еда понравится самым утонченным гурманам, а&nbsp;цены и&nbsp;качество обслуживания приятно удивят</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>	
+				</div>
+			</div>
+			
+			<div class="slider-top-content" style="background-image: url(img/slide-2.jpg);">
+				<div class="banner-wrapper">
+					<div class="banner-content">
+						<div class="banner-viewport">
+							<ul class="banner">
+								<li>
+									<div class="flex-caption-text">
+										<h2>Почти как дома</h2>
+										<span class="flex-caption-text-divider">&nbsp;</span>
+										<p>Наши повара готовят только из свежих качественных продуктов, от&nbsp;первых и&nbsp;вторых блюд до&nbsp;десертов!</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>	
+				</div>
+			</div>
+        </div>
+
+<!--
+        <div class="slider-top" style="display: none;">
+			<div class="slider-top-content">
+				<div class="banner-wrapper">
+				<button id="fancy_right" type="button" class="fancy-slider-next fancy-slider-arrow">Next</button>
+
+				<div class="banner-content">
+					<div class="banner-viewport">
+						<ul class="banner">
+							<li>
+								<div class="flex-caption-text">
+									<h2>Готовим с&nbsp;любовью</h2>
+									<span class="flex-caption-text-divider">&nbsp;</span>
+									<p>Наши блюда откроют вам новый мир вкуса, а&nbsp;цены и&nbsp;качество обслуживания покорят</p>
+								</div>
+							</li>
+                        </ul>
+					</div>
+				</div>
+				
+				
+
+				<button id="fancy_left" type="button" class="fancy-slider-prev fancy-slider-arrow">Previous</button>
+				</div>
+			</div>
+        </div>
+-->
+		<div class="about" id="about">
+			<div class="about-content">
+				<div class="about-content-left">
+					<h2>О&nbsp;нас</h2>
+					<h3>Доступно и вкусно</h3>
+					<p>Сеть ресторанов и кафе с&nbsp;домашней кухней и&nbsp;отличным уровнем обслуживания. Мы&nbsp;предлагаем не&nbsp;только индивидуальный подход к&nbsp;гостям, но&nbsp;и&nbsp;высокое качество продуктов, вежливое обслуживание и&nbsp;приятную обстановку. Самым главным для нас являются отзывы наших довольных клиентов.</p>
+<p>Вкусная еда&nbsp;&mdash; не&nbsp;обязательно дорогая, она может быть и&nbsp;вполне доступной для любого кошелька! Доступные цены, вкуснейшие блюда и&nbsp;напитки понравятся даже очень привередливым гурманам. Здесь вы&nbsp;можете заказать еду с&nbsp;собой или поужинать в&nbsp;уютной атмосфере, отдохнув от&nbsp;долгой дороги. Также наше заведение понравится любителям выпить чашечку ароматного кофе с&nbsp;десертом.</p>
+<p>Наша сеть постоянно расширяется, пополняясь новыми новыми заведениями для вас. Доверие к&nbsp;компании построено на&nbsp;большом опыте, внимательном отношении и&nbsp;высоком качестве услуг. Больше не&nbsp;возникнет вопрос, где перекусить по&nbsp;пути по&nbsp;делам или в&nbsp;путешествии, мы&nbsp;ждем вас в&nbsp;любое время вашей дороги!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="address" id="restaurants">
+			<div class="address-content">
+				<div class="address-block">
+					<span><img src="img/address-label-1.png"></span>
+					<p>1-я Тверская-Ямская улица, 45</p>
+                    <p>+7 (900) 123-45-67</p>
+                    <p>08:00-23:00</p>
+				</div>
+				<div class="address-block edge">
+				<span><img src="img/address-label-2.png"></span>
+					<p>1-я Тверская-Ямская улица, 45</p>
+                    <p>+7 (900) 123-45-67</p>
+                    <p>08:00-23:00</p>
+				</div>
+				<div class="address-block">
+				<span><img src="img/address-label-3.png"></span>
+					<p>1-я Тверская-Ямская улица, 45</p>
+                    <p>+7 (900) 123-45-67</p>
+                    <p>08:00-23:00</p>
+				</div>
+				<div class="address-block-edge">
+					<span><img src="img/address-label-4.png"></span>
+					<p>1-я Тверская-Ямская улица, 45</p>
+					<p>+7 (900) 123-45-67</p>
+					<p>08:00-23:00</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="culinary">
+			<div class="culinary-content">
+				<div class="culinary-content-right">
+					<h2>Шедевры кулинарии</h2>
+					<h3>Доступнее, чем вы&nbsp;думаете</h3>
+					<p>Наше заведение известно своей домашней кухней, свежей, ароматной и&nbsp;доступной как никогда! Компания существует почти двадцать лет, и&nbsp;теперь у&nbsp;нас уже целая сеть ресторанов. У&nbsp;нас большой опыт и&nbsp;множество рецептов, которые расширят ваше представление о&nbsp;доступной еде. Гриль, салат-бар и&nbsp;шведский стол отличают нас от&nbsp;любого другого подобного заведения. У&nbsp;нас работают талантливые шеф-повара и&nbsp;вежливый персонал</p>
+					<p class="culinary-signature">Иван Иванов<br>
+					Повар ресторана</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu">
+			<div class="menu-content" id="menu">
+				<div class="menu-content-left">
+					<h2>Меню</h2>
+					<h3>Вкуснее, чем вы&nbsp;думаете</h3>
+					<p>Тающий во&nbsp;рту стейк из&nbsp;мраморной говядины средней прожарки, традиционный борщ со&nbsp;сметаной, жюльен с&nbsp;грибами&nbsp;&mdash; это лишь часть предлагаемых блюд. Мы&nbsp;стремимся доставить настоящее наслаждение от&nbsp;пищи и&nbsp;оправдать самые высокие ожидания, поэтому познакомим вас с&nbsp;доступной, но&nbsp;вкуснейшей кухней наших ресторанов.</p>
+<p>Наши повара постоянно развиваются в&nbsp;своем направлении, постоянно совершенствуют и&nbsp;улучшают вкус каждого блюда. В&nbsp;нашем меню вы&nbsp;найдете именно&nbsp;то, что придется вам по&nbsp;душе.</p>
+<p>Одно из&nbsp;наших основных правил: еда должна быть не&nbsp;только вкусной, но&nbsp;и&nbsp;красивой. Мы&nbsp;рады поделиться с&nbsp;вами своей любовью к&nbsp;еде и&nbsp;привнести в&nbsp;традиционные блюда новые нотки.</p>
+				</div>
+				<div class="menu-content-right">
+					<a href="/Меню_А4.compressed.pdf" target="_blank"><span><img src="img/menu-img.png"></span></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="gallery">
+			<div class="gallery-content" id="galleryls">
+			<!-- Видимый блок с фотографиями -->
+			<div class="gallery-list">
+						<div class="gallery-list-row">
+
+
+							<a data-fancybox="gallery" href="img/gallery/1b.jpg">
+							<div class="gallery-foto">
+								<div class="gallery-block">
+									<div class="gallery-block-content">
+										<div class="gallery-block-content-inner">
+									<p>Борщ</p>
+
+									<div class="" style="float: left;padding-left: 2px;">
+										<div class="left_line"></div>
+										<div class="gallery-block-content-price">169 руб.</div>
+										<div class="right_line"></div>
+									</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</a>
+
+							<a data-fancybox="gallery" href="img/gallery/2b.jpg">
+							<div class="gallery-foto" style="background-image: url(img/gallery/2.png);">
+								<div class="gallery-block">
+									<div class="gallery-block-content">
+										<div class="gallery-block-content-inner">
+									<p>Бургер ТРАССА</p>
+
+									<div class="" style="float: left;padding-left: 2px;">
+										<div class="left_line"></div>
+										<div class="gallery-block-content-price">299 руб.</div>
+										<div class="right_line"></div>
+									</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</a>
+
+							<a data-fancybox="gallery" href="img/gallery/3b.jpg">
+							<div class="gallery-foto" style="background-image: url(img/gallery/3.png);">
+								<div class="gallery-block">
+									<div class="gallery-block-content">
+										<div class="gallery-block-content-inner">
+									<p>Корейка ягненка с&nbsp;тимьяном</p>
+
+									<div class="" style="float: left;padding-left: 2px;">
+										<div class="left_line"></div>
+										<div class="gallery-block-content-price">999 руб.</div>
+										<div class="right_line"></div>
+									</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</a>
+
+							<a data-fancybox="gallery" href="img/gallery/4b.jpg">
+							<div class="gallery-foto" style="background-image: url(img/gallery/4.png);">
+								<div class="gallery-block">
+									<div class="gallery-block-content">
+										<div class="gallery-block-content-inner">
+									<p>Сырный пирог</p>
+
+									<div class="" style="float: left;padding-left: 2px;">
+										<div class="left_line"></div>
+										<div class="gallery-block-content-price">189 руб.</div>
+										<div class="right_line"></div>
+									</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</a>
+
+							<a data-fancybox="gallery" href="img/gallery/5b.jpg">
+							<div class="gallery-foto" style="background-image: url(img/gallery/5.png);">
+								<div class="gallery-block">
+									<div class="gallery-block-content">
+										<div class="gallery-block-content-inner">
+									<p>Жюльен с&nbsp;белыми грибами в&nbsp;блине</p>
+
+									<div class="" style="float: left;padding-left: 2px;">
+										<div class="left_line"></div>
+										<div class="gallery-block-content-price">249 руб.</div>
+										<div class="right_line"></div>
+									</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</a>
+
+							<a data-fancybox="gallery" href="img/gallery/6b.jpg">
+							<div class="gallery-foto" style="background-image: url(img/gallery/6.png);">
+								<div class="gallery-block">
+									<div class="gallery-block-content">
+										<div class="gallery-block-content-inner">
+									<p>Завтрак по-деревенски</p>
+
+									<div class="" style="float: left;padding-left: 2px;">
+										<div class="left_line"></div>
+										<div class="gallery-block-content-price">289 руб.</div>
+										<div class="right_line"></div>
+									</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</a>
+
+						</div>
+			</div>
+
+
+			<!-- Скрытый блок с фотографиями -->
+			<div id="block1" class="block">
+
+					<div class="gallery-list">
+						<div class="gallery-list-row">
+
+							<a data-fancybox="gallery" href="img/more-foto/1b.jpg">
+							<div class="gallery-foto" style="background-image: url(img/more-foto/1.jpg);">
+							</div>
+							</a>
+
+							<a data-fancybox="gallery" href="img/more-foto/7b.jpg">
+							<div class="gallery-foto" style="background-image: url(img/more-foto/7.jpg);">
+							</div>
+							</a>
+
+							<a data-fancybox="gallery" href="img/more-foto/3b.jpg">
+							<div class="gallery-foto" style="background-image: url(img/more-foto/3.jpg);">
+							</div>
+							</a>
+
+							<a data-fancybox="gallery" href="img/more-foto/4b.jpg">
+							<div class="gallery-foto" style="background-image: url(img/more-foto/4.jpg);">
+							</div>
+							</a>
+
+							<a data-fancybox="gallery" href="img/more-foto/5b.jpg">
+							<div class="gallery-foto" style="background-image: url(img/more-foto/5.jpg);">
+							</div>
+							</a>
+
+							<a data-fancybox="gallery" href="img/more-foto/6b.jpg">
+							<div class="gallery-foto" style="background-image: url(img/more-foto/6.jpg);">
+							</div>
+							</a>
+
+						</div>
+				</div>
+				</div>
+
+
+				<span id="more-foto" class="more-foto-img">
+
+					<img src="img/see-more-foto.png" class="more-photo__todown">
+						<!-- Картинка для сворачивания блока -->
+						<img src="img/see-less-foto.png" class="more-photo__toup">
+
+					<button class="hide-show-block more-foto-text"
+						id="more-foto"
+						type="button"
+						data-block-id="#block1">
+						Смотреть больше фото
+					</button>
+
+				</span>
+
+			</div>
+		</div>
+
+
+		<div class="map">
+			<div class="map-content" id="addresses">
+					<h2>Адреса ресторанов</h2>
+					<h3>Ближе, чем вы&nbsp;думаете</h3>
+			</div>
+			<div class="map-img" id="yamap">
+			</div>
+			<div class="map-address-content">
+				<div class="map-address-block">
+					<span><img src="img/address-label-1.png"></span>
+					<p class="map-address-street" data-street="55.5266, 38.11245">1-я Тверская-Ямская улица, 45</p>
+                     <p><a href="№">+7 (900) 123-45-67</a></p>
+                                                    <p>08:00-23:00</p>
+
+				</div>
+				<div class="map-address-block">
+					<span><img src="img/address-label-2.png"></span>
+					<p class="map-address-street" data-street="56.07889, 37.12514">1-я Тверская-Ямская улица, 45</p>
+                    <p><a href="№">+7 (900) 123-45-67</a></p>
+                                                    <p>08:00-23:00</p>
+				</div>
+				<div class="map-address-block">
+					<span><img src="img/address-label-3.png"></span>
+					<p class="map-address-street" data-street="55.39371, 37.77619">1-я Тверская-Ямская улица, 45</p>
+                    <p><a href="№">+7 (900) 123-45-67</a></p>
+                                                    <p>08:00-23:00</p>
+				</div>
+				<div class="map-address-block">
+					<span><img src="img/address-label-4.png"></span>
+					<p class="map-address-street" data-street="55.78299, 37.153">1-я Тверская-Ямская улица, 45</p>
+				<p><a href="№">+7 (900) 123-45-67</a></p>
+                                                    <p>08:00-23:00</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="guest">
+			<div class="guest-content">
+					<h2>Мы любим своих гостей</h2>
+					<p>Следите за&nbsp;последними новостями и&nbsp;акциями, получайте призы и&nbsp;бонусы!</p>
+					<div id="email-form" class="guest-form">
+                                            <div class="guest-form-row">
+                                                <input type="text" name="email" placeholder="введите свой email" autocomplete="off">
+                                            </div>
+                                            <span class="note note_hidden note_ok">Спасибо! Подписка осуществлена!</span>
+                                            <span class="note note_hidden note_error">Вы ввели неверный адрес, попробуйте снова!</span>
+					</div>
+					<div class="counter">
+					<div class="counter-in">
+						<div class="counter-content">
+							<div class="counter-round">
+								<div class="counter-circle-in">
+									<p>4</p>
+									<p><span>ресторана</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="counter-content">
+							<div class="counter-round">
+								<div class="counter-circle-in">
+									<p>4</p>
+									<p><span>года</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="counter-content">
+							<div class="counter-round">
+								<div class="counter-circle-in">
+									<p>100</p>
+									<p><span>блюд</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="counter-content">
+							<div class="counter-round">
+								<div class="counter-circle-in">
+									<p>60</p>
+									<p><span>банкетов</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+			</div>
+			</div>
+
+			<div class="feedback">
+				<div class="feedback-content">
+					<h2>Забронировать столик</h2>
+					<h3>Проще, чем вы&nbsp;думаете</h3>
+					<div class="feedback-form-container">
+						<div method="g" class="feedback__form">
+						<div class="feedback-form" id="trassa-feedback-form">
+							<div class="feedback-form-container-left">
+								<input type="text" name="name" placeholder="имя">
+								<input type="text" name="email" placeholder="email">
+								<input type="text" name="phone" placeholder="телефон">
+							</div>
+
+							<div class="feedback-form-container-right">
+								<textarea name="comment" placeholder="введите текст"></textarea>
+								<div class="feedback-form-button">
+									<button class="send feedback-form__send" type="button">
+										<a href="javascript:;">ОТПРАВИТЬ</a>
+									</button>
+								</div>
+
+                                                            <div class="feedback-form__state">
+                                                                <!-- отправлено -->
+                                                                <p class="feedback-form-sent">Спасибо! Ваш запрос отправлен нашим сотрудникам!</p>
+
+                                                                <!-- ошибка заполнения -->
+                                                                <p class="feedback-form-error">Вы&nbsp;ввели неверную информацию, попробуйте снова!</p>
+                                                            </div>
+							</div>
+						</div>
+                                                </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div class="footer-content">
+				<div class="footer-content-address">
+					<div class="footer-content-address-1">
+						<span class="white-title">ЗАБРОНИРУЙТЕ СТОЛИК</span>
+						<p><a href="#">+7 (900) 123-45-67</a></p>
+                        <p><a href="#">+7 (900) 123-45-67</a></p>
+                        <p><a href="#">+7 (900) 123-45-67</a></p>
+                        <p><a href="#">+7 (900) 123-45-67</a> </p>
+
+						<p>Мы работаем с 08.00 до 23.00</p>
+						<!--
+						<span class="white-title">ПОСМОТРИТЕ И ПОПРОБУЙТЕ</span>
+						<p><a download="" href="#">Меню PDF (100 мб)</a></p>
+						-->
+					</div>
+
+				</div>
+				<div class="footer-content-address-2">
+						<img src="img/footer-logo-red.png">
+				</div>
+				<div class="footer-content-menu">
+					<div id="footer-nav">
+						<ul class="footer-menu-list">
+							<li class="last"><a href="#restaurants" class="splink">О нас</a></li>
+							<li><a href="#restaurants" class="splink">Адреса</a></li>
+							<li><a href="#menu" class="splink">Меню</a> </li>
+							<li><a href="#galleryls" class="splink">Галерея</a> </li>
+							<li><a href="#addresses" class="splink">Как нас найти</a> </li>
+						</ul>
+					</div>
+                   
+                    
+                    
+					<div id="footer-social">
+						<ul>
+							<li class="footer-social-wk"><a href="#" target="_blank"></a></li>
+							<li class="footer-social-ok"><a href="#" target="_blank"></a></li>
+						</ul>
+					</div>
+				</div>
+
+				</div>
+			</div>
+
+	</div>
+
+                
+    </div>
+
+	
+	<!-- Всплывающие окна -->
+	<div id="fancy_popup_overlay"></div>
+	<div id="fancy_popup_wrap">
+		<div id="fancy_popup_outer" style="">
+			<div id="fancy_popup_inner">
+				<button id="fancy_popup_right" type="button" data-role="none" class="fancy-popup-slider-next fancy-popup-slider-arrow" aria-label="Next" role="button" style="display: block;">&nbsp;</button>
+					<div id="fancy_popup_close" style="display: block;"></div>
+					<div id="fancy_popup_content" style="">
+						<img alt="" id="fancy_popup_img" src="img/gallery/1b.jpg">
+						<div id="fancy_popup_title">
+							<div class="fancy_popup_price">
+									<p>Борщ</p>
+
+									<div class="fancy_popup_price-content">
+										<div class="left_line"></div>
+										<div class="gallery-block-content-price">169 руб.</div>
+										<div class="right_line"></div>
+									</div>
+							</div>
+						</div>
+					</div>
+					
+				<button id="fancy_popup_left" type="button" data-role="none" class="fancy-popup-slider-prev fancy-popup-slider-arrow" aria-label="Previous" role="button" style="display: block;">&nbsp;</button>
+						
+			</div>
+		</div>
+	</div>
+	
+	<div id="fancy_popup_wrap">
+		<div id="fancy_popup_outer_vertical" style="">
+			<div id="fancy_popup_inner">
+				<button id="fancy_popup_right" type="button" data-role="none" class="fancy-popup-slider-next fancy-popup-slider-arrow" aria-label="Next" role="button" style="display: block;">&nbsp;</button>
+					<div id="fancy_popup_close" style="display: block;"></div>
+					<div id="fancy_popup_content" style="">
+						<img alt="" id="fancy_popup_img" src="img/gallery/3b.jpg">
+						<div id="fancy_popup_title">
+							<div class="fancy_popup_price">
+									<p>Борщ</p>
+
+									<div class="fancy_popup_price-content">
+										<div class="left_line"></div>
+										<div class="gallery-block-content-price">169 руб.</div>
+										<div class="right_line"></div>
+									</div>
+							</div>
+						</div>
+					</div>
+					
+				<button id="fancy_popup_left" type="button" data-role="none" class="fancy-popup-slider-prev fancy-popup-slider-arrow" aria-label="Previous" role="button" style="display: block;">&nbsp;</button>
+						
+			</div>
+		</div>
+	</div>
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/buttonup.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
