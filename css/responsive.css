@@ -141,7 +141,7 @@ culinary {height: 599px;}
     float: left;
 }
 .footer-content-address-1 {
-    padding-top: 65px;
+    padding-top: 0px;
     float: left;
 }
 .footer-content-address-2 {
@@ -151,7 +151,7 @@ culinary {height: 599px;}
     width: 40%;
 }
 .footer-content-address-2 img {
-    width: 100%;
+    width: auto;
 }
 .footer-content-menu {
     width: 100%;
@@ -218,7 +218,7 @@ culinary {height: 599px;}
 .feedback {
     width: 100%;
     height: auto;
-    min-height: 841px;
+    min-height: 730px;
     background-size: cover;
 }
 .feedback-content h2 {    font-size: 32px;    margin-top: 55px;    text-align: center;}
@@ -247,7 +247,7 @@ culinary {height: 599px;}
 .map-address-content {
     max-width: 1000px;
     margin: 0 auto 0;
-    padding: 0 0 0;
+    padding: 25px 0 0;
     float: left;
 }
 .map-address-block {
@@ -266,8 +266,8 @@ culinary {height: 599px;}
 
 @media only screen and (max-width: 480px) {
 	.main {text-align: center;}
-	.header-content {text-align: center; display: block;height: auto;}
-	.logo {width: 47%; margin-top: 15px; margin-bottom: 23px;}
+	.header-content {text-align: center; width: auto; display: block;height: 280px;}
+	.logo {width: 33%; margin-top: 15px; margin-bottom: 23px;}
 	.contact-top {
 		/*width: 100%; */
 		width: 53%; 
@@ -278,6 +278,9 @@ culinary {height: 599px;}
 	#social  {
     display: none;
 }
+	.address {
+		padding-top: 0px;
+	}
 	#social-resp {
 		display: block;
     position: relative;
@@ -301,9 +304,6 @@ culinary {height: 599px;}
 	transition: all 0.2s ease 0s;
 }
 .call-back-resp {display: block;}
-.menu-list {
-    margin-right: 6.3%;
-}
 .menu-list .active {
     line-height: 29px;
 }
@@ -356,6 +356,13 @@ h2 {font-size: 32px;}
 .guest {    min-height: 578px;background: #000;}
 .guest-content h2 {font-size: 32px;margin-top: 65px;}
 .guest-form  {width: 98%;    padding: 0 4px;}
+
+.counter-content {
+    width: 185px;
+    text-align: center;
+    margin-bottom: 53px;
+    display: inline-block;
+}
 
 .feedback {
     width: 100%;
