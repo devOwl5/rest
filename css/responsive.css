@@ -266,13 +266,14 @@ culinary {height: 599px;}
 
 @media only screen and (max-width: 480px) {
 	.main {text-align: center;}
-	.header-content {text-align: center; display: block;}
+	.header-content {text-align: center; display: block;height: auto;}
 	.logo {width: 47%; margin-top: 15px; margin-bottom: 23px;}
 	.contact-top {
-		width: 100%; 
+		/*width: 100%; */
 		width: 53%; 
 		margin: 42px auto 21px;
 		text-align: right;
+		float: right;
 		}
 	#social  {
     display: none;
