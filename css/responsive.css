@@ -340,7 +340,7 @@ h2 {font-size: 32px;}
 .culinary-content{padding: 50px 10px 46px 0;width: 96%;}
 .culinary-content-right {    width: 98%;}
 .culinary-content h2  {font-size: 32px;}
-.culinary-signature  {font-size: 14px !important; background: url(img/signature-marker-sm.png) top right no-repeat;    padding: 30px 84px 0px 0;}
+.culinary-signature  {font-size: 14px !important; background: url(img/povar-marker-sm.png) top right no-repeat;    padding: 30px 84px 0px 0;}
 
 .menu {}
 .menu-content {padding: 9px 0 46px 0; width: 100%;}
@@ -382,7 +382,7 @@ h2 {font-size: 32px;}
     float: left;
 }
 .footer-content-address-1 {
-    padding-top: 37px;
+    padding-top: 0px;
     float: none;
     margin-bottom: 54px;
 }
@@ -435,7 +435,6 @@ h2 {font-size: 32px;}
     color: #797979;
     margin-top: 31px;
     position: relative;
-    display: block;
     float: left;
     text-align: center;
     width: 100%;
